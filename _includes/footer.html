@@ -1,0 +1,29 @@
+<footer class="weui-footer_fixed-bottom">
+	<div class="weui-tabbar">
+		<a href="{{ site.baseurl }}/index.html" class="weui-tabbar__item {% if page.url contains 'index' %}weui-bar__item_on{% endif %}">
+			<text class="iconfont icon-home"></text>
+			<p class="weui-tabbar__label">首页</p>
+		</a>
+
+		<a href="{{ site.baseurl }}/pages/item-list.html" class="weui-tabbar__item {% if page.url contains 'item-list' %}weui-bar__item_on{% endif %}">
+			<text class="iconfont icon-goods {% if page.url contains 'item-list' %}success{% endif %}"></text>
+			<p class="weui-tabbar__label">商品</p>
+		</a>
+
+		<a href="{{ site.baseurl }}/pages/cart-list.html" class="weui-tabbar__item {% if page.url contains 'cart-list' %}weui-bar__item_on{% endif %}">
+			<span style="display: inline-block; position: relative;">
+				<text class="iconfont icon-cart {% if page.url contains 'cart-list' %}success{% endif %}"></text>
+				<span class="weui-badge" style="position: absolute;top: -2px;right: -13px;">2</span>
+			</span>
+			<p class="weui-tabbar__label">购物车</p>
+		</a>
+
+		<a href="{{ site.baseurl }}/pages/user.html" class="weui-tabbar__item {% if page.url contains 'user' %}weui-bar__item_on{% endif %}">
+			<span style="display: inline-block;position: relative;">
+				<text class="iconfont icon-my {% if page.url contains 'user' %}success{% endif %}"></text>
+				<span class="weui-badge weui-badge_dot" style="position: absolute;top: 0;right: -6px;"></span>
+			</span>
+			<p class="weui-tabbar__label">我的</p>
+		</a>
+	</div>
+</footer>

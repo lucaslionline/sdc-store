@@ -1,0 +1,139 @@
+---
+layout: default
+title: "团购通道"
+---
+
+
+
+
+<nav class="weui-flex nav-orders">
+	<div class="weui-flex__item fortab tab-current">登录企业账号</div>
+	<div class="weui-flex__item fortab">注册企业用户</div>
+</nav>
+<div style="height: 40px;"></div>
+
+
+
+
+<div class="tab-content">
+	<div class="tab-pane active">
+		<div class="weui-cells weui-cells_form">
+			<div class="weui-cell">
+				<div class="weui-cell__hd"><label class="weui-label"></label>账号</div>
+				<div class="weui-cell__bd">
+					<input class="weui-input" type="text" placeholder="请输入登录账号"/>
+				</div>
+			</div>
+			<div class="weui-cell">
+				<div class="weui-cell__hd"><label class="weui-label">密码</label></div>
+				<div class="weui-cell__bd">
+					<input class="weui-input" type="password" placeholder="请输入登录密码"/>
+				</div>
+			</div>
+		</div>
+
+		<div class="weui-btn-area">
+			<a class="weui-btn weui-btn_primary" href="#" id="">登录</a>
+		</div>
+	</div>
+
+
+
+
+
+	<div class="tab-pane">
+		<div class="weui-cells weui-cells_form">
+			<div class="weui-cell">
+				<div class="weui-cell__hd"><label class="weui-label">企业名称</label></div>
+				<div class="weui-cell__bd">
+					<input class="weui-input" type="text" placeholder="请填写企业名称"/>
+				</div>
+			</div>
+			<div class="weui-cell">
+				<div class="weui-cell__hd"><label class="weui-label">信用代码</label></div>
+				<div class="weui-cell__bd">
+					<input class="weui-input" type="text" placeholder="请填写企业统一社会信用代码"/>
+				</div>
+			</div>
+			<div class="weui-cell">
+				<div class="weui-cell__hd"><label class="weui-label">所在省份</label></div>
+				<div class="weui-cell__bd">
+					<select class="weui-select-2" name="select1">
+						<option selected="" value="请选择...">请选择...</option>
+						<option value="北京市">北京市</option>
+						<option value="上海市">上海市</option>
+						<option value="天津市">天津市</option>
+						<option value="重庆市">重庆市</option>
+						<option value="浙江省">浙江省</option>
+						<option value="安徽省">安徽省</option>
+						<option value="福建省">福建省</option>
+						<option value="江西省">江西省</option>
+						<option value="山东省">山东省</option>
+						<option value="河南省">河南省</option>
+						<option value="湖北省">湖北省</option>
+						<option value="湖南省">湖南省</option>
+						<option value="广东省">广东省</option>
+						<option value="海南省">海南省</option>
+						<option value="山西省">山西省</option>
+						<option value="青海省">青海省</option>
+						<option value="江苏省">江苏省</option>
+						<option value="辽宁省">辽宁省</option>
+						<option value="吉林省">吉林省</option>
+						<option value="台湾省">台湾省</option>
+						<option value="河北省">河北省</option>
+						<option value="贵州省">贵州省</option>
+						<option value="四川省">四川省</option>
+						<option value="云南省">云南省</option>
+						<option value="陕西省">陕西省</option>
+						<option value="甘肃省">甘肃省</option>
+						<option value="黑龙江省">黑龙江省</option>
+						<option value="广西壮族自治区">广西壮族自治区</option>
+						<option value="宁夏回族自治区">宁夏回族自治区</option>
+						<option value="新疆维吾尔自治区">新疆维吾尔自治区</option>
+						<option value="内蒙古自治区">内蒙古自治区</option>
+						<option value="西藏自治区">西藏自治区</option>
+						<option value="香港特别行政区">香港特别行政区</option>
+						<option value="澳门特别行政区">澳门特别行政区</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="weui-cell">
+				<div class="weui-cell__hd"><label class="weui-label"></label>登录账号</div>
+				<div class="weui-cell__bd">
+					<input class="weui-input" type="text" placeholder="请设置登录账号（仅限字母和数字）"/>
+				</div>
+			</div>
+			<div class="weui-cell">
+				<div class="weui-cell__hd"><label class="weui-label">设置密码</label></div>
+				<div class="weui-cell__bd">
+					<input class="weui-input" type="password" placeholder="请设置登录密码"/>
+				</div>
+			</div>
+			<div class="weui-cell">
+				<div class="weui-cell__hd"><label class="weui-label">确认密码</label></div>
+				<div class="weui-cell__bd">
+					<input class="weui-input" type="password" placeholder="请确认登录密码"/>
+				</div>
+			</div>
+		</div>
+
+		<div class="weui-btn-area">
+			<a class="weui-btn weui-btn_primary" href="#" id="">注册</a>
+		</div>
+	</div>
+</div>
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".fortab").click(function(){
+		var number = $(".fortab").index(this);
+		$(this).addClass("tab-current");
+		$(this).siblings().removeClass("tab-current");
+		$(".tab-pane:eq("+number+")").show();
+		$(".tab-pane:eq("+number+")").siblings().hide();
+	})
+})
+</script>

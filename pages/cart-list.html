@@ -1,0 +1,108 @@
+---
+layout: default
+title: "购物车"
+---
+
+
+
+<div class="weui-panel weui-panel_access">
+	<div class="weui-panel__hd">
+		<text class="iconfont icon-cart"></text>
+		我的购物车 (2)
+	</div>
+	<div class="weui-panel__bd">
+		<!--================= item 1 =================-->
+		<div class="weui-media-box weui-media-box_appmsg">
+			<label for="item1">
+				<div class="weui-media-box__check">
+					<input type="checkbox" name="checkbox1" class="weui-check-success" id="item1"/>
+					<i class="weui-icon-checked"></i>
+				</div>
+			</label>
+
+			<a href="{{ site.baseurl }}/pages/items/item1.html">
+				<div class="weui-media-box__hd">
+					<img class="weui-media-box__thumb" src="{{ site.baseurl }}/assets/img/item1.jpg" alt="">
+				</div>
+			</a>
+
+			<div class="weui-media-box__bd">
+				<p>铁皮枫斗（50克）</p>
+				<p class="weui-media-box__desc"><small>商品描述</small></p>
+				<p class="weui-media-box__info">
+					<span class="cart-price">¥458.00</span>
+
+					<span class="pull-right">
+						<span class="cart-delete"><text class="iconfont icon-delete success"></text></span>
+						<span class="cart-quantity-minus"><strong>-</strong></span>
+						<input type="text" class="cart-quantity" size="1" value="1">
+						<span class="cart-quantity-plus"><strong>+</strong></span>
+					</span>
+				</p>
+			</div>
+		</div>
+
+
+		<!--================= item 2 =================-->
+		<div class="weui-media-box weui-media-box_appmsg">
+			<label for="item2">
+				<div class="weui-media-box__check">
+					<input type="checkbox" name="checkbox1" class="weui-check-success" id="item2"/>
+					<i class="weui-icon-checked"></i>
+				</div>
+			</label>
+
+			<a href="">
+				<div class="weui-media-box__hd">
+					<img class="weui-media-box__thumb" src="{{ site.baseurl }}/assets/img/item2.jpg" alt="">
+				</div>
+			</a>
+
+			<div class="weui-media-box__bd">
+				<p>铁皮枫斗（100克）</p>
+				<p class="weui-media-box__desc"><small>商品描述</small></p>
+				<p class="weui-media-box__info">
+					<span class="cart-price">¥898.00</span>
+					<span class="pull-right">
+						<span class="cart-delete"><text class="iconfont icon-delete success"></text></span>
+						<span class="cart-quantity-minus"><strong>-</strong></span>
+						<input type="text" class="cart-quantity" size="1" value="1">
+						<span class="cart-quantity-plus"><strong>+</strong></span>
+					</span>
+				</p>
+			</div>
+		</div>
+
+
+
+
+		<!--================= 全选 =================-->
+		<div class="weui-media-box weui-media-box_appmsg">
+			<label for="item-all">
+				<div class="weui-media-box__check">
+					<input type="checkbox" name="checkbox1" class="weui-check-success" id="item-all"/>
+					<i class="weui-icon-checked"></i>
+				</div>
+			</label>
+
+			<div class="weui-media-box__bd">全选</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!--================= 结算 =================-->
+<div style="height: 50px;"></div>
+<div class="checkout-preview">
+	<div class="weui-form-preview__ft">
+		<span class="weui-form-preview__btn weui-form-preview__btn_default">
+			合计：
+			<span class="price-total">¥1356.00</span>
+		</span>
+		<a type="submit" class="weui-form-preview__btn weui-form-preview__btn_primary_fill" href="{{ site.baseurl }}/pages/orders/20181112-001.html">
+			去结算 <strong>(1)</strong>
+		</a>
+	</div>
+</div>

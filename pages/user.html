@@ -1,0 +1,112 @@
+---
+layout: default
+title: "个人中心"
+---
+
+
+<div style="height: 120px; background: url({{ site.baseurl }}/assets/img/bg1.jpg) center center; background-size: cover;">
+	<table style="height:100%; color: white;">
+		<tr>
+			<td style="padding-left: 15px;"><img width="50px" src="{{ site.baseurl }}/assets/img/profile-user.png"></td>
+			<td style="padding-left: 5px;">
+				<h4>微信昵称</h4>
+				<small>个人用户</small>
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+
+
+<div class="weui-cells">
+	<a class="weui-cell weui-cell_access" href="{{ site.baseurl }}/pages/orders-done.html">
+		<div class="weui-cell__bd">
+			<p><text class="iconfont icon-text"></text>&nbsp;我的订单</p>
+		</div>
+		<div class="weui-cell__ft">查看全部订单</div>
+	</a>
+</div>
+
+
+
+<div class="weui-tab weui-tab-orders">
+	<div class="weui-navbar">
+		<div class="weui-navbar__item">
+			<a href="{{ site.baseurl }}/pages/orders-unpaid.html">
+				<span style="display: inline-block; position: relative;">
+					<text class="iconfont icon-vipcard" style="font-size: 1.5rem;"></text><br>
+					<span class="weui-badge" style="position: absolute;top: -2px; right: -4px;">2</span>
+					待支付
+				</span>
+			</a>
+		</div>
+		<div class="weui-navbar__item">
+			<a href="{{ site.baseurl }}/pages/orders-undelivered.html">
+				<span style="display: inline-block; position: relative;">
+					<text class="iconfont icon-present" style="font-size: 1.5rem;"></text><br>
+					待发货
+				</span>
+			</a>
+		</div>
+		<div class="weui-navbar__item">
+			<a href="{{ site.baseurl }}/pages/orders-unreceived.html">
+				<span style="display: inline-block; position: relative;">
+					<text class="iconfont icon-deliver" style="font-size: 1.5rem;"></text><br>
+					待收货
+				</span>
+			</a>
+		</div>
+		<div class="weui-navbar__item">
+			<a href="{{ site.baseurl }}/pages/refund.html">
+				<span style="display: inline-block; position: relative;">
+					<text class="iconfont icon-round_transfer" style="font-size: 1.5rem;"></text><br>
+					退换货
+				</span>
+			</a>
+		</div>
+	</div>
+	<div class="weui-tab__panel">
+
+	</div>
+</div>
+
+
+
+<div class="weui-cells">
+	<a class="weui-cell weui-cell_access" href="{{ site.baseurl }}/pages/balance.html">
+		<div class="weui-cell__hd"><text class="iconfont icon-moneybag"></text>&nbsp;</div>
+		<div class="weui-cell__bd">
+			<p>我的余额</p>
+		</div>
+		<div class="weui-cell__ft">¥ 14,746.00</div>
+	</a>
+	<a class="weui-cell weui-cell_access" href="{{ site.baseurl }}/pages/coins.html">
+		<div class="weui-cell__hd"><text class="iconfont icon-coin"></text>&nbsp;</div>
+		<div class="weui-cell__bd">
+			<p>我的积分</p>
+		</div>
+		<div class="weui-cell__ft">376</div>
+	</a>
+	<a class="weui-cell weui-cell_access" href="{{ site.baseurl }}/pages/coupons-used.html">
+		<div class="weui-cell__hd"><text class="iconfont icon-redpacket"></text>&nbsp;</div>
+		<div class="weui-cell__bd">
+			<p>我的礼券</p>
+		</div>
+		<div class="weui-cell__ft">2</div>
+	</a>
+	<a class="weui-cell weui-cell_access" href="{{ site.baseurl }}/pages/info.html">
+		<div class="weui-cell__hd"><text class="iconfont icon-peoplelist"></text>&nbsp;</div>
+		<div class="weui-cell__bd">
+			<p>个人信息</p>
+		</div>
+		<div class="weui-cell__ft"></div>
+	</a>
+	<a class="weui-cell weui-cell_access" href="{{ site.baseurl }}/pages/address-null.html">
+		<div class="weui-cell__hd"><text class="iconfont icon-location"></text>&nbsp;</div>
+		<div class="weui-cell__bd">
+			<p>收货地址</p>
+		</div>
+		<div class="weui-cell__ft"></div>
+	</a>
+</div>

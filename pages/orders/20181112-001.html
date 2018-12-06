@@ -1,0 +1,94 @@
+---
+layout: default
+title: "提交订单"
+---
+
+
+<div class="weui-cells">
+	<a class="weui-cell weui-cell_access" href="{{ site.baseurl }}/pages/address-list.html">
+		<div class="weui-cell__bd">
+			<p class="weui-media-box__title">
+				<text class="iconfont icon-locationfill" style="color: #09BB07;"></text>
+				张三 137****1234
+			</p>
+			北京市xx区xx街xx楼xx室
+		</div>
+		<div class="weui-cell__ft">
+		</div>
+	</a>
+</div>
+
+<div class="weui-panel">
+	<div class="weui-panel__bd">
+		<div class="weui-media-box weui-media-box_appmsg">
+			<div class="weui-media-box__hd">
+				<img class="weui-media-box__thumb" src="{{ site.baseurl }}/assets/img/item1.jpg">
+			</div>
+			<div class="weui-media-box__bd">
+				<p>铁皮枫斗（50克）</p>
+				<p class="weui-media-box__desc">¥458.00</p>
+				<p class="weui-media-box__info">
+					<span class="cart-quantity-minus"><strong>-</strong></span>
+					<input type="text" class="cart-quantity" size="1" value="1">
+					<span class="cart-quantity-plus"><strong>+</strong></span>
+
+					<span class="pull-right"><text class="iconfont icon-delete success"></text></span>
+				</p>
+			</div>
+		</div>
+
+
+		<div class="weui-media-box weui-media-box_appmsg">
+			<div class="weui-media-box__hd">
+				<img class="weui-media-box__thumb" src="{{ site.baseurl }}/assets/img/item2.jpg">
+			</div>
+			<div class="weui-media-box__bd">
+				<p>铁皮枫斗（100克）</p>
+				<p class="weui-media-box__desc">¥898.00</p>
+				<p class="weui-media-box__info">
+					<span class="cart-quantity-minus"><strong>-</strong></span>
+					<input type="text" class="cart-quantity" size="1" value="1">
+					<span class="cart-quantity-plus"><strong>+</strong></span>
+
+					<span class="pull-right"><text class="iconfont icon-delete success"></text></span>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div class="weui-cells">
+	<div class="weui-cell weui-cell_select weui-cell_select-after">
+		<div class="weui-cell__hd cell-prefix">支付方式</div>
+		<div class="weui-cell__bd">
+			<select class="weui-select" name="select2">
+				<option value="2" selected>余额支付</option>
+				<option value="1">积分兑换</option>
+				<option value="3">微信支付</option>
+			</select>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!--================= 提交订单 =================-->
+<div style="height: 50px;"></div>
+<div class="checkout-preview">
+	<div class="weui-form-preview__ft">
+		<a class="weui-form-preview__btn weui-form-preview__btn_default">
+			<span class="price-total">¥1356.00</span>
+		</a>
+		<a class="weui-form-preview__btn weui-form-preview__btn_primary_fill" href="{{ site.baseurl }}/pages/pay-balance.html">
+			提交订单
+		</a>
+	</div>
+</div>

@@ -1,0 +1,172 @@
+---
+title: "凤凰源官方商城"
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+	{% include head.html %}
+</head>
+
+<body>
+	<div class="container">
+		<div class="swiper-container" id="cover">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="{{ site.baseurl }}/assets/img/slide1.jpg">
+					<div class="announcement">
+						<h2>凤凰源官方商城</h2>
+						<h1>12月15日-20日开始公测</h1>
+						<h2>欢迎大家积极关注</h2>
+						<h3>- 关注有惊喜哦 -</h3>
+					</div>
+				</div>
+				<div class="swiper-slide"><img src="{{ site.baseurl }}/assets/img/slide2.jpg"></div>
+				<div class="swiper-slide"><img src="{{ site.baseurl }}/assets/img/slide3.jpg"></div>
+				<div class="swiper-slide"><img src="{{ site.baseurl }}/assets/img/slide4.jpg"></div>
+			</div>
+			<!-- 如果需要分页器 -->
+			<div class="swiper-pagination"></div>
+		</div>
+
+		<script type="text/javascript">
+		var mySwiper = new Swiper ('#cover', {
+			direction: 'horizontal',
+	loop: true, // 循环模式选项
+	// 如果需要分页器
+	pagination: {
+		el: '.swiper-pagination',
+	},
+	autoplay: {
+		delay: 3000,
+	}
+});    
+		</script>
+
+
+
+
+
+		<div class="weui-flex market-feature">
+			<a class="weui-flex__item" href="{{ site.baseurl }}/pages/coupon-new.html">
+				<text class="iconfont icon-redpacket" style="font-size: 2.5em; color: red;"></text>
+				<div class="placeholder">礼券兑换</div>
+			</a>
+			<a class="weui-flex__item" href="{{ site.baseurl }}/pages/group.html">
+				<text class="iconfont icon-group" style="font-size: 2.5em; color: green;"></text>
+				<div class="placeholder">团购通道</div>
+			</a>
+			<a class="weui-flex__item" href="{{ site.baseurl }}/pages/stores.html">
+				<text class="iconfont icon-location" style="font-size: 2.5em; color: orange;"></text>
+				<div class="placeholder">线下提货</div>
+			</a>
+			<a class="weui-flex__item" href="{{ site.baseurl }}/pages/coins.html">
+				<text class="iconfont icon-present" style="font-size: 2.5em; color: blue;"></text>
+				<div class="placeholder">建材回收</div>
+			</a>
+			<a class="weui-flex__item" href="{{ site.baseurl }}/pages/about.html">
+				<text class="iconfont icon-info" style="font-size: 2.5em; color: purple;"></text>
+				<div class="placeholder">了解SDC</div>
+			</a>
+		</div>
+
+
+
+		<div class="section-title">
+			<center><text class="iconfont icon-hot red"></text> <strong>热 卖 商 品</strong></center>
+		</div>
+
+
+		<div class="swiper-container" id="hot">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="item-list item-list-hot">
+						<a href="{{ site.baseurl }}/pages/items/item1.html">
+							<img src="{{ site.baseurl }}/assets/img/item1.jpg" alt="">
+							<div class="item-title">铁皮石斛礼盒（金粉+花茶）</div>
+						</a>
+						<p class="item-desc">金粉10g+花茶10g</p>
+						<p class="item-price">
+							<span class="new-price">¥598.00</span>
+							<!--span class="old-price">¥500.00</span-->
+							<a href=""><span class="item-cart"><text class="iconfont icon-cart"></text></span></a>
+						</p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="item-list item-list-hot">
+						<a href="javascript:void(0);">
+							<img src="{{ site.baseurl }}/assets/img/item2.jpg" alt="">
+							<div class="item-title">铁皮石斛礼盒（银粉+花茶）</div>
+						</a>
+						<p class="item-desc">银粉10g+花茶10g</p>
+						<p class="item-price">
+							<span class="new-price">¥398.00</span>
+							<!--span class="old-price">¥1000.00</span-->
+							<a href=""><span class="item-cart"><text class="iconfont icon-cart"></text></span></a>
+						</p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="item-list item-list-hot">
+						<a href="javascript:void(0);">
+							<img src="{{ site.baseurl }}/assets/img/item3.jpg" alt="">
+							<div class="item-title">铁皮石斛软金粉（金装）</div>
+						</a>
+						<p class="item-desc">10g*1瓶</p>
+						<p class="item-price">
+							<span class="new-price">¥398.00</span>
+							<!--span class="old-price">¥500.00</span-->
+							<a href=""><span class="item-cart"><text class="iconfont icon-cart"></text></span></a>
+						</p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="item-list item-list-hot">
+						<a href="javascript:void(0);">
+							<img src="{{ site.baseurl }}/assets/img/item4.jpg" alt="">
+							<div class="item-title">铁皮石斛软金粉（金装）</div>
+						</a>
+						<p class="item-desc">10g*6瓶</p>
+						<p class="item-price">
+							<span class="new-price">¥2388.00</span>
+							<!--span class="old-price">¥300.00</span-->
+							<a href=""><span class="item-cart"><text class="iconfont icon-cart"></text></span></a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+			<!-- 如果需要滚动条 -->
+			<!--div class="swiper-scrollbar"></div-->
+		</div>
+
+
+		<script type="text/javascript">
+		var swiper = new Swiper('#hot', {
+slidesPerView:2,  //默认页面显示多少个
+navigation: {
+	nextEl: '.swiper-button-next',
+	prevEl: '.swiper-button-prev',
+},
+// 如果需要滚动条
+scrollbar: {
+	el: '.swiper-scrollbar',
+},
+});
+		</script>
+
+
+
+		<div class="section-title">
+			<center><a href="{{ site.baseurl }}/pages/item-list.html">查 看 全 部</a></center>
+		</div>
+
+
+
+
+		{% include footer.html %}
+	</div>
+</body>
+</html>
